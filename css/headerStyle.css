@@ -1,0 +1,70 @@
+.logo{
+    position:relative;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1000;
+    width:400px;
+    text-align:center;
+    transition: opacity, left;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.2s;
+}
+.logo img{
+    max-width:35%;
+    transition: max-width 0.4s ease;
+}
+.logo h1 {
+	font-weight: 800;
+	font-size: 2.80em !important;
+    color: #2c3e50;
+	line-height: 1;
+    transition: font-size 0.4s ease;
+}
+.logo h1 span {
+	display: block;
+	font-size: 50%;
+	font-weight: 400;
+	padding-top: 0.325em;
+}
+.logohide{
+    opacity:0;
+    left:40%;
+    transition: opacity, left;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+.trans {
+    position:fixed;
+    top: 4.3em;
+	left: 17.5em;
+    z-index: 1000;
+    width:250px;
+    transition: opacity, left;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.2s;
+}
+.trans img {
+    max-width:35%;
+    transition: max-width 0.4s ease;
+}
+.trans h1 {
+    font-size: 1.75em !important;
+    color: #ecf0f1;
+    transition: font-size 0.4s ease;
+}
+.transhide{
+    opacity:0;
+    left:30%;
+    transition: opacity, left;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+
+@media screen and (max-width: 33em) {
+	.logo {
+		display:none;
+        transition: display 0.1s ease;
+	}
+}
